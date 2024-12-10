@@ -6,7 +6,7 @@ require('dotenv').config(); // Cargar el archivo .env
 let environment= process.argv[2];  // El primer argumento después de "node script.js"
 
 // Ruta del archivo .gs que se generará
-const outputFilePath = path.join(__dirname, `prop.js`);
+const outputFilePath = path.join(__dirname, `env.${environment}.js`);
 
 // Leer el archivo .env directamente para obtener solo las variables definidas allí
 const envFilePath = path.join(__dirname, `.env.${environment}`);
