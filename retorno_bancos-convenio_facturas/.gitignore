@@ -1,0 +1,4 @@
+# Ignorar archivos .env y cualquier archivo que comience con .env
+**.env*
+# Ignorar archivos env.dev.js y env.prod.js temporales
+env*.js

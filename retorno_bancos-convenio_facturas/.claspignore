@@ -1,0 +1,7 @@
+# Ignorar todos los archivos que comienzan con un punto y terminan en .js
+.*.js
+# Ignorar la carpeta node_modules
+**/node_modules/**
+node_modules/
+# Ignorar .env*
+.env*
