@@ -17,3 +17,13 @@ env.<environment>.js
 ```
 clasp push
 ```
+# Cambio entre proyectos de desarrollo y producción
+Se maneja dos archivos .clasp.<environment>.json para la configuración de los proyectos de appscript. En el package.json se manejan scripts para automatizar el manejo de ambientes.
+- Para cambiar a desarrollo
+```
+npm run change:dev
+```
+- Para cambiar a producción
+```
+npm run change:prod
+```

@@ -1,5 +1,21 @@
 {
   "dependencies": {
     "dotenv": "^16.4.7"
-  }
+  },
+  "name": "retorno_bancos-convenio_facturas",
+  "version": "1.0.0",
+  "description": "- Se ejecutara la secuencia .generateEnv.js\r ```\r node .generateEnvGs.js \"dev\"/\"prod\"\r ```\r - Se generara un archivo env.<environment>.js que permitira crear las propiedades automaticamente.\r - Se subira los cambios\r ```\r clasp push\r ```\r - Se ejecura la secuencia env.<environment>.js desde appscript, esto creara las propiedades automaticamente.\r - Se eliminara el archivo env.<environment>.js del entorno local\r ```\r env.<environment>.js\r ```\r - Se actualizar el proyecto nuevamente\r ```\r clasp push\r ```",
+  "main": ".generateEnvGs.js",
+  "devDependencies": {},
+  "scripts": {
+    "change:dev": "copy .clasp.dev.json .clasp.json",
+    "change:prod": "copy .clasp.prod.json .clasp.json",
+    "push:dev": "move .clasp.dev.json .clasp.json && clasp push && move .clasp.json .clasp.dev.json",
+    "push:prod": "move .clasp.prod.json .clasp.json && clasp push && move .clasp.json .clasp.prod.json",
+    "pull:dev": "move .clasp.dev.json .clasp.json && clasp pull && move .clasp.json .clasp.dev.json",
+    "pull:prod": "move .clasp.prod.json .clasp.json && clasp pull && move .clasp.json .clasp.prod.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
