@@ -41,13 +41,13 @@ function comision(){
         if (existe.length > 0) {
             let comision = existe[0].COMISION;
             let importe_neto = Number(importe_pagado) - Number(comision);
-            // Guardamos los resultados en los arreglos
+            // Agregamos un apóstrofe antes del valor para tratarlo como texto
             comisiones.push([comision]);
-            importesNetos.push([importe_neto]);
+            importesNetos.push([`'${Utilities.formatString("%.2f",Number(importe_neto))}`]);
         } else {
-            // Si no existe, podemos agregar valores por defecto (por ejemplo, 0 o un valor vacío)
+            // Valores por defecto si no existe
             comisiones.push([0]);
-            importesNetos.push([importe_pagado]);
+            importesNetos.push([`'${Utilities.formatString("%.2f",Number(importe_pagado))}`]);
         }
     }
     
