@@ -4,8 +4,6 @@ Se emplearan dos proyectos independientes uno para desarrollo y otro para produc
 
 Ambos proyectos serán manejados a partir de un solo proyecto local. El control de versiones se realizara a traves de git y el versionamiento de clasp, siendo el versionamiento principal el controlado por git.
 
-![sdd-framework-appscript.drawio.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/43f78099-e161-4bce-94ad-333d4c74f8e4/3f0ff8aa-47b5-43ac-90c5-ef7d7a250825/sdd-framework-appscript.drawio.png)
-
 Comenzaremos creando el proyecto de desarrollo.
 
 ```bash
@@ -153,5 +151,3 @@ Ejemplo `.gitignore`
 # Ignorar archivos env.dev.js y env.prod.js temporales
 env*.js
 ```
-
-## Repositorio de ejemplo
