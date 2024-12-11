@@ -11,7 +11,7 @@ clasp push
 - Se ejecura la secuencia env.{environment}.js desde appscript, esto creara las propiedades automaticamente.
 - Se eliminara el archivo env.{environment}.js del entorno local
 ```
-env.{environment}.js
+rm env.{environment}.js
 ```
 - Se actualizara el proyecto nuevamente
 ```

@@ -9,11 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "change:dev": "copy .clasp.dev.json .clasp.json",
-    "change:prod": "copy .clasp.prod.json .clasp.json",
-    "push:dev": "move .clasp.dev.json .clasp.json && clasp push && move .clasp.json .clasp.dev.json",
-    "push:prod": "move .clasp.prod.json .clasp.json && clasp push && move .clasp.json .clasp.prod.json",
-    "pull:dev": "move .clasp.dev.json .clasp.json && clasp pull && move .clasp.json .clasp.dev.json",
-    "pull:prod": "move .clasp.prod.json .clasp.json && clasp pull && move .clasp.json .clasp.prod.json"
+    "change:prod": "copy .clasp.prod.json .clasp.json"
   },
   "keywords": [],
   "author": "",
